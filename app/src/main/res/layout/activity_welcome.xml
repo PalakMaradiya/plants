@@ -17,6 +17,11 @@
         android:layout_marginTop="@dimen/_10sdp">
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
         <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="@dimen/_30sdp"
@@ -140,6 +145,7 @@
                         android:layout_height="@dimen/_60sdp"
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/imgPlants"
                         android:src="@drawable/plants" />
 
 
@@ -257,6 +263,7 @@
                                     <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:id="@+id/imgPots"
                                         android:layout_gravity="center_horizontal"
                                         android:src="@drawable/plants2" />
 
@@ -333,6 +340,7 @@
                                         android:layout_height="@dimen/_30sdp"
                                         android:backgroundTint="#9ec759"
                                         android:text="Details"
+                                        android:id="@+id/btnDeatils"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white" />
 
@@ -576,6 +584,7 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_weight="1"
+                android:id="@+id/imgcart"
                 android:src="@drawable/cart" />
 
 
