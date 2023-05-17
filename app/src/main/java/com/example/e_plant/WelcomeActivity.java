@@ -1,15 +1,16 @@
 package com.example.e_plant;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class WelcomeActivity extends AppCompatActivity {
 
-    ImageView imgCart , imgProfile  , imgPlants ,imgcart,imgPots;
+    ImageView imgCart , imgProfile  , imgPlants ,imgcart,imgPots,imgSearch;
 
     Button btnDeatils;
 
@@ -22,6 +23,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void initview() {
         imgCart = findViewById(R.id.imgCart);
+        imgSearch = findViewById(R.id.imgSearch);
         imgPlants = findViewById(R.id.imgPlants);
         imgPots = findViewById(R.id.imgPots);
         btnDeatils = findViewById(R.id.btnDeatils);
@@ -89,6 +91,17 @@ public class WelcomeActivity extends AppCompatActivity {
 
                 Intent i = new Intent(WelcomeActivity.this,DetialsActivity.class);
                 startActivity(i);
+            }
+        });
+
+
+        imgSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(WelcomeActivity.this,SearchActivity.class);
+                startActivity(i);
+
             }
         });
 

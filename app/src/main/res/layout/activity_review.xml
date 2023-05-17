@@ -36,7 +36,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_200sdp"
-        android:src="@drawable/plants2"/>
+        android:src="@drawable/mon"/>
 
 
     <androidx.cardview.widget.CardView
@@ -58,25 +58,75 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:src="@drawable/start2"/>
 
-                <TextView
-                    android:layout_marginTop="@dimen/_13sdp"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4.0"/>
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:src="@drawable/s1"/>
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:src="@drawable/s1"/>
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:src="@drawable/s1"/>
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:src="@drawable/s1"/>
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/s3"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0"/>
+
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
 
                 <ImageView
+                    android:layout_marginLeft="@dimen/_120sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:layout_marginLeft="@dimen/_150sdp"
                     android:src="@drawable/like"/>
 
                 <ImageView
+                    android:layout_weight="1"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
@@ -85,48 +135,69 @@
 
             </LinearLayout>
 
+
+
+            </LinearLayout>
+
             <LinearLayout
+
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_marginLeft="@dimen/_10sdp"
+                <LinearLayout
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_15ssp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Blue Face "/>
+                    android:layout_height="wrap_content">
 
-                <Button
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Blue Face "/>
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="medium"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_30sdp"
-                    android:text="medium"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"/>
+                    android:layout_height="wrap_content">
 
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/minus" />
 
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 " />
 
-                <ImageView
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:src="@drawable/minus"
-                    android:layout_marginLeft="@dimen/_70sdp"/>
+                    <ImageView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/plus"/>
 
-                <TextView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:text="1 " />
-
-                <ImageView
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:src="@drawable/plus"/>
-
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -234,9 +305,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:weightSum="10"
                         android:orientation="horizontal">
 
                         <TextView
+                            android:layout_weight="2"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_8ssp"
@@ -246,17 +319,55 @@
                             android:text="Redwan"/>
 
 
-                        <ImageView
-                            android:layout_marginLeft="@dimen/_170sdp"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:gravity="end"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/start2" />
+                            android:layout_weight="7">
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_gravity="end"
+                                android:src="@drawable/s1"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:src="@drawable/s1"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:src="@drawable/s1"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:src="@drawable/s1"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/s3"/>
+
+
+                        </LinearLayout>
+
 
                         <TextView
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_width="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="4.0"/>
+
+
                     </LinearLayout>
 
                     <TextView

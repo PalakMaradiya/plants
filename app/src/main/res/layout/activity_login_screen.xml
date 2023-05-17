@@ -69,7 +69,7 @@
             android:textStyle="bold"/>
 
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:textColor="#9BA4B5"
             android:gravity="fill"
             android:textAllCaps="false">
-        </android.support.v7.widget.AppCompatButton>
+        </androidx.appcompat.widget.AppCompatButton>
 
 
         <TextView
@@ -149,7 +149,7 @@
         </LinearLayout>
 
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button"
@@ -161,7 +161,7 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginHorizontal="@dimen/_20sdp">
 
-        </android.support.v7.widget.AppCompatButton>
+        </androidx.appcompat.widget.AppCompatButton>
 
         <LinearLayout
             android:layout_marginTop="@dimen/_170sdp"

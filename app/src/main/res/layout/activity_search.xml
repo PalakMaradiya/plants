@@ -228,8 +228,8 @@
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/plants2"
+                                android:layout_height="@dimen/_150sdp"
+                                android:src="@drawable/mon"
                                 android:layout_gravity="center_horizontal"/>
 
 
@@ -407,8 +407,8 @@
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/plants2"
+                                android:layout_height="@dimen/_150sdp"
+                                android:src="@drawable/mon"
                                 android:layout_gravity="center_horizontal"/>
 
 
