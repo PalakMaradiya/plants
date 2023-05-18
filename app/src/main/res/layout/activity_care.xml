@@ -161,7 +161,8 @@
                         android:textColor="@color/black"
                         android:text="Blue Face "/>
 
-                    <Button
+
+                    <androidx.appcompat.widget.AppCompatButton
 
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30sdp"
@@ -213,7 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_30sdp"
@@ -223,7 +224,8 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
 
-                <Button
+
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_weight="1"
@@ -235,7 +237,8 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReview"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
                     android:layout_width="0dp"

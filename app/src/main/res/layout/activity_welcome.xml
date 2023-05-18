@@ -8,7 +8,6 @@
     tools:context=".WelcomeActivity">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,9 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp">
-
-
-
 
 
         <ImageView
@@ -84,6 +80,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -99,7 +96,6 @@
 
 
                     <ImageView
-                        android:id="@+id/imgSearch"
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sdp"
@@ -118,7 +114,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,11 +144,11 @@
 
 
                     <ImageView
+                        android:id="@+id/imgPlants"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:id="@+id/imgPlants"
                         android:src="@drawable/plants" />
 
 
@@ -179,30 +174,47 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/andada"
-                    android:text="Best Selling"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_15ssp"
-                    android:textStyle="bold" />
+                    android:layout_weight="8"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/andada"
+                        android:text="Best Selling"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_120sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:src="@drawable/back" />
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:src="@drawable/next" />
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/b2" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:src="@drawable/right2" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -231,8 +243,8 @@
 
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:orientation="vertical">
 
 
@@ -269,11 +281,12 @@
                                     android:orientation="vertical">
 
                                     <ImageView
+                                        android:id="@+id/imgShop"
                                         android:layout_width="@dimen/_200sdp"
                                         android:layout_height="@dimen/_150sdp"
-                                        android:id="@+id/imgPots"
                                         android:layout_gravity="center_horizontal"
-                                        android:src="@drawable/mon" />
+                                        android:src="@drawable/mon"
+                                        tools:ignore="DuplicateIds" />
 
 
                                 </LinearLayout>
@@ -281,7 +294,8 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
 
 
                                     <TextView
@@ -293,29 +307,29 @@
                                         android:textSize="@dimen/_15ssp"
                                         android:textStyle="bold" />
 
-                                    <Button
-                                        android:layout_width="@dimen/_40sdp"
-                                        android:layout_height="@dimen/_20sdp"
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_30sdp"
                                         android:text="Plants"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white"
-                                        android:textSize="@dimen/_5ssp" />
+                                        android:textSize="@dimen/_9ssp" />
 
 
                                     <ImageView
-                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_width="match_parent"
                                         android:layout_height="@dimen/_15sdp"
-                                        android:layout_marginLeft="@dimen/_80sdp"
+                                        android:layout_marginLeft="@dimen/_60sdp"
                                         android:layout_marginTop="@dimen/_7sdp"
+                                        android:layout_weight="1"
                                         android:src="@drawable/star" />
 
 
                                     <TextView
-                                        android:layout_width="match_parent"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="@dimen/_3sdp"
                                         android:layout_marginRight="@dimen/_5sdp"
-                                        android:gravity="end"
                                         android:text="5.0"
                                         android:textColor="#9ec759" />
 
@@ -339,16 +353,16 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:paddingBottom="@dimen/_5sdp"
-                                    android:layout_marginHorizontal="@dimen/_10sdp">
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_5sdp">
 
 
                                     <Button
+                                        android:id="@+id/btndatils"
                                         android:layout_width="wrap_content"
                                         android:layout_height="@dimen/_30sdp"
                                         android:backgroundTint="#9ec759"
                                         android:text="Details"
-                                        android:id="@+id/btnDeatils"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white" />
 
@@ -463,14 +477,13 @@
                                         android:textSize="@dimen/_15ssp"
                                         android:textStyle="bold" />
 
-                                    <Button
-                                        android:layout_width="@dimen/_40sdp"
-                                        android:layout_height="@dimen/_20sdp"
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_30sdp"
                                         android:text="Plants"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white"
-                                        android:textSize="@dimen/_5ssp" />
-
+                                        android:textSize="@dimen/_9ssp" />
 
                                     <ImageView
                                         android:layout_width="@dimen/_15sdp"
@@ -481,7 +494,7 @@
 
 
                                     <TextView
-                                        android:layout_width="match_parent"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="@dimen/_3sdp"
                                         android:layout_marginRight="@dimen/_5sdp"
@@ -509,11 +522,12 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:paddingBottom="@dimen/_5sdp"
-                                    android:layout_marginHorizontal="@dimen/_10sdp">
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_5sdp">
 
 
                                     <Button
+                                        android:id="@+id/btnDeatlis"
                                         android:layout_width="wrap_content"
                                         android:layout_height="@dimen/_30sdp"
                                         android:backgroundTint="#9ec759"
@@ -625,9 +639,9 @@
                                     android:orientation="vertical">
 
                                     <ImageView
+                                        android:id="@+id/imgPots"
                                         android:layout_width="@dimen/_200sdp"
                                         android:layout_height="@dimen/_150sdp"
-                                        android:id="@+id/imgPots"
                                         android:layout_gravity="center_horizontal"
                                         android:src="@drawable/mon" />
 
@@ -649,13 +663,13 @@
                                         android:textSize="@dimen/_15ssp"
                                         android:textStyle="bold" />
 
-                                    <Button
-                                        android:layout_width="@dimen/_40sdp"
-                                        android:layout_height="@dimen/_20sdp"
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_30sdp"
                                         android:text="Plants"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white"
-                                        android:textSize="@dimen/_5ssp" />
+                                        android:textSize="@dimen/_9ssp" />
 
 
                                     <ImageView
@@ -695,16 +709,16 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:paddingBottom="@dimen/_5sdp"
-                                    android:layout_marginHorizontal="@dimen/_10sdp">
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_5sdp">
 
 
                                     <Button
+                                        android:id="@+id/btnDeatils"
                                         android:layout_width="wrap_content"
                                         android:layout_height="@dimen/_30sdp"
                                         android:backgroundTint="#9ec759"
                                         android:text="Details"
-                                        android:id="@+id/btnDeatils"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white" />
 
@@ -819,13 +833,13 @@
                                         android:textSize="@dimen/_15ssp"
                                         android:textStyle="bold" />
 
-                                    <Button
-                                        android:layout_width="@dimen/_40sdp"
-                                        android:layout_height="@dimen/_20sdp"
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_30sdp"
                                         android:text="Plants"
                                         android:textAllCaps="false"
                                         android:textColor="@color/white"
-                                        android:textSize="@dimen/_5ssp" />
+                                        android:textSize="@dimen/_9ssp" />
 
 
                                     <ImageView
@@ -865,8 +879,8 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:paddingBottom="@dimen/_5sdp"
-                                    android:layout_marginHorizontal="@dimen/_10sdp">
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_5sdp">
 
 
                                     <Button
@@ -919,41 +933,40 @@
             </HorizontalScrollView>
 
 
-
         </LinearLayout>
     </ScrollView>
 
 
-
-<!-- for fotter-->
+    <!-- for fotter-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
         app:cardCornerRadius="@dimen/_20sdp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="4"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:weightSum="4">
 
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
-                android:layout_weight="1"
                 android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
                 android:src="@drawable/home"
                 tools:ignore="Suspicious0dp" />
 
             <ImageView
+                android:id="@+id/imgcart"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_weight="1"
-                android:id="@+id/imgcart"
                 android:src="@drawable/cart" />
 
 

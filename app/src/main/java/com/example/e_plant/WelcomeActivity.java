@@ -7,12 +7,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    ImageView imgCart , imgProfile  , imgPlants ,imgcart,imgPots,imgSearch;
+    ImageView imgCart , imgProfile  , imgPlants ,imgcart,imgPots,imgShop;
 
-    Button btnDeatils;
+    CardView cardSearch;
+
+    Button btnDeatlis,btndatils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +26,13 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void initview() {
         imgCart = findViewById(R.id.imgCart);
-        imgSearch = findViewById(R.id.imgSearch);
+        btndatils = findViewById(R.id.btndatils);
+        imgShop = findViewById(R.id.imgShop);
+        cardSearch = findViewById(R.id.cardSearch);
         imgPlants = findViewById(R.id.imgPlants);
         imgPots = findViewById(R.id.imgPots);
-        btnDeatils = findViewById(R.id.btnDeatils);
+        btnDeatlis = findViewById(R.id.btnDeatils);
         imgcart = findViewById(R.id.imgcart);
-        btnDeatils = findViewById(R.id.btnDeatils);
         imgProfile = findViewById(R.id.imgProfile);
         imgCart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,14 +50,6 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        imgPlants . setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent i = new Intent(WelcomeActivity.this,PlantsActivity.class);
-                startActivity(i);
-            }
-        });
 
 
         imgcart.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +71,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        btnDeatils . setOnClickListener(new View.OnClickListener() {
+        btnDeatlis . setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -95,13 +91,33 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
 
-        imgSearch.setOnClickListener(new View.OnClickListener() {
+        cardSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent i = new Intent(WelcomeActivity.this,SearchActivity.class);
                 startActivity(i);
 
+            }
+        });
+
+
+
+        imgShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(WelcomeActivity.this,DetialsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btndatils.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(WelcomeActivity.this,DetialsActivity.class);
+                startActivity(i);
             }
         });
 

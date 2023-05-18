@@ -16,9 +16,10 @@
 
 
         <ImageView
+            android:id="@+id/imgBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"/>
+            android:src="@drawable/b2"/>
 
         <TextView
             android:layout_width="@dimen/_250sdp"
@@ -186,7 +187,8 @@
                         android:textColor="@color/black"
                         android:text="Blue Face "/>
 
-                    <Button
+
+                    <androidx.appcompat.widget.AppCompatButton
 
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30sdp"
@@ -233,7 +235,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Button
+
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:text="About"
@@ -242,7 +245,7 @@
                     android:textAllCaps="false"/>
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_30sdp"
@@ -252,7 +255,8 @@
                     android:textAllCaps="false"/>
 
 
-                <Button
+
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_30sdp"

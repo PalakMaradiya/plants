@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="EPlants"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EPlant"
+        android:theme="@style/Theme.ResumeMaker"
         tools:replace="android:fullBackupContent"
         tools:targetApi="31">
         <activity

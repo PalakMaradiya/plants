@@ -68,7 +68,7 @@
             android:textStyle="bold"/>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,8 +76,8 @@
             android:text="   Write your mail...."
             android:textColor="#9BA4B5"
             android:gravity="fill"
-            android:textAllCaps="false">
-        </Button>
+            android:textAllCaps="false"/>
+
 
 
         <TextView

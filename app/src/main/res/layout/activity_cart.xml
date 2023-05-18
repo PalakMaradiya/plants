@@ -16,9 +16,10 @@
 
 
         <ImageView
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/back"/>
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/b2"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -347,7 +348,7 @@
 
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnCheckout"
@@ -357,8 +358,7 @@
         android:textSize="@dimen/_15ssp"
         android:textColor="@color/white"
         android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginHorizontal="@dimen/_20sdp">
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
 
-    </Button>
 
 </LinearLayout>

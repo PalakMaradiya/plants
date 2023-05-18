@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    TextView txtLogin,txtforgotpassword;
+    TextView txtLogin, txtforgotpassword;
 
     AppCompatButton btnSignin;
 
@@ -30,7 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
         txtLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent  i = new Intent(SignUpActivity.this,loginScreenActivity.class);
+                Intent i = new Intent(SignUpActivity.this, loginScreenActivity.class);
                 startActivity(i);
             }
         });
@@ -39,7 +39,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SignUpActivity.this,WelcomeActivity.class);
+                Intent i = new Intent(SignUpActivity.this, WelcomeActivity.class);
                 startActivity(i);
             }
         });

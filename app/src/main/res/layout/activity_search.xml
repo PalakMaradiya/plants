@@ -9,25 +9,31 @@
 
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <ImageView
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/imgBack"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"/>
+            android:src="@drawable/b2"/>
 
         <EditText
-            android:layout_width="@dimen/_230sdp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:text="|Search "/>
+            android:text="Search "/>
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/filter"
             android:layout_marginRight="@dimen/_10sdp"
@@ -174,7 +180,8 @@
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/_250sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_width="@dimen/_280sdp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
@@ -251,13 +258,13 @@
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_15ssp"/>
 
-                            <Button
-                                android:layout_width="@dimen/_40sdp"
-                                android:layout_height="@dimen/_20sdp"
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
                                 android:text="Plants"
-                                android:textColor="@color/white"
                                 android:textAllCaps="false"
-                                android:textSize="@dimen/_5ssp"/>
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9ssp" />
 
 
 
@@ -354,7 +361,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/_250sdp"
+                android:layout_width="@dimen/_280sdp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_gravity="center_horizontal"
@@ -430,13 +437,13 @@
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_15ssp"/>
 
-                            <Button
-                                android:layout_width="@dimen/_40sdp"
-                                android:layout_height="@dimen/_20sdp"
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
                                 android:text="Plants"
-                                android:textColor="@color/white"
                                 android:textAllCaps="false"
-                                android:textSize="@dimen/_5ssp"/>
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9ssp" />
 
 
 
